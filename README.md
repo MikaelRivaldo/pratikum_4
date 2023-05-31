@@ -130,3 +130,89 @@ hasilnya akan seperti ini :
 
 # Tugas Pratikum (2)
 
+1.Tampilkan jumlah hewan yang dimiliki setiap owner.
+
+2.Tampilkan jumlah hewan berdasarkan spesies.
+
+3.Tampilkan jumlah hewan berdasarkan jenis kelamin.
+
+4.Tampilkan jumlah hewan berdasarkan spesies dan jenis kelamin.
+
+5.Tampilkan jumlah hewan berdasarkan spesis (cat dan dog saja) dan jenis kelamin.
+
+6.Tampilkan jumlah hewan berdasarkan jenis kelamin yang diketahui saja.
+
+# Penyelesaian
+
+1.Tampilkan jumlah hewan yang dimiliki setiap owner.
+
+`JAWAB`
+
+Untuk perintahnya bisa menggunkan perintah seperti ini  :
+
+`SELECT owner, COUNT(*) AS jumlah_hewan FROM hewan GROUP BY owner;`
+
+hasilnya akan seperti ini :
+
+![gambar jwbno1](https://github.com/MikaelRivaldo/pratikum_4/assets/115770247/25b66544-9973-44b8-853b-0a253cee5707)
+
+2.Tampilkan jumlah hewan berdasarkan spesies.
+
+`JAWAB`
+
+Untuk perintahnya bisa menggunkan perintah seperti ini  :
+
+`SELECT species, COUNT(*) AS jumlah_hewan FROM hewan GROUP BY species;`
+
+hasilnya akan seperti ini :
+
+![gambar jwbno2](https://github.com/MikaelRivaldo/pratikum_4/assets/115770247/7e5b6166-f98f-4899-a66f-88615f5095bb)
+
+3.Tampilkan jumlah hewan berdasarkan jenis kelamin
+
+`JAWAB`
+
+Untuk perintahnya bisa menggunkan perintah seperti ini  :
+
+`SELECT sex, COUNT(*) AS jumlah_hewan FROM hewan GROUP BY sex;`
+
+hasilnya akan seperti ini :
+
+![gambar jwbno3](https://github.com/MikaelRivaldo/pratikum_4/assets/115770247/7264f281-6f68-46d3-a1f1-03e3fab9bae0)
+
+4.Tampilkan jumlah hewan berdasarkan spesies dan jenis kelamin.
+
+`JAWAB`
+
+Untuk perintahnya bisa menggunkan perintah seperti ini  :
+
+`SELECT species, sex, COUNT(*) AS jumlah_hewan FROM hewan GROUP BY species,sex;`
+
+hasilnya akan seperti ini :
+
+![gambar jwbno4](https://github.com/MikaelRivaldo/pratikum_4/assets/115770247/de00ed2c-b8f5-4f21-975e-e48d5a140b5d)
+
+
+5.Tampilkan jumlah hewan berdasarkan spesis (cat dan dog saja) dan jenis kelamin.
+
+`JAWAB`
+
+Untuk perintahnya bisa menggunkan perintah seperti ini  :
+
+`SELECT species, sex, COUNT(*) AS jumlah_hewan FROM hewan WHERE species IN('Cat','Dog')GROUP BY species, sex;`
+
+hasilnya akan seperti ini :
+
+![gambar jwbno5](https://github.com/MikaelRivaldo/pratikum_4/assets/115770247/d5b105f8-b39d-4cf6-ad09-480a5f2294d3)
+
+6.Tampilkan jumlah hewan berdasarkan jenis kelamin yang diketahui saja.
+
+`JAWAB`
+
+Untuk perintahnya bisa menggunkan perintah seperti ini  :
+
+`SELECT sex, COUNT(*) AS jumlah_hewan FROM hewan WHERE sex IN('f','m')GROUP BY sex;`
+
+hasilnya akan seperti ini :
+
+![gambar jwbno6](https://github.com/MikaelRivaldo/pratikum_4/assets/115770247/85f63ffc-c71e-4154-bdf3-d05d2f7f2635)
