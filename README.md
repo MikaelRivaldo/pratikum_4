@@ -72,7 +72,7 @@ Untuk perintahnya bisa menggunkan perintah seperti ini  :
 
 Untuk perintahnya bisa menggunkan perintah seperti ini  :
 
-`SELECT COUNT(*) AS jumlah_baris FROM tb_pegawai;`
+`SELECT COUNT(*) AS jumlah_baris FROM pegawai;`
 
 hasilnya akan seperti ini :
 
@@ -96,7 +96,7 @@ hasilnya akan seperti ini :
 
 Untuk perintahnya bisa menggunkan perintah seperti ini  :
 
-`SELECT AVG(gaji) AS rata_gaji FROM tb_pegawai`
+`SELECT AVG(gaji) AS rata_gaji FROM pegawai`
 
 hasilnya akan seperti ini :
 
